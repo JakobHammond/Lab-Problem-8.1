@@ -9,6 +9,11 @@
 using namespace std;
 
 int main(void){
-   
+    int countCharacter(string str);
+    
+    
 }
 
+int countCharacter(string str){
+    return str.length();
+}
