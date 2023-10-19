@@ -6,12 +6,20 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 
+int countCharacter(string str);
+int countVowel(string str);
 int main(void){
-    int countCharacter(string str);
-    int countVowel(string str);
-    
+        
+    string input;
+    while(true){
+        cout << "Enter a string or Q to quit: ";
+        getline(cin, input);
+        if(input == "Q") break;
+        cout << "Vowel count: " << countVowel(input) << endl;
+    }
     
     
 }
